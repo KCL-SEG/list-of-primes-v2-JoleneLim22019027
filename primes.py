@@ -2,7 +2,7 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def primes(number_of_primes):
-    try:
+    if (number_of_primes > 0):
         list = []
         num = 2
         if number_of_primes >= 1:
@@ -22,8 +22,7 @@ def primes(number_of_primes):
 
         return list
     
-    except ValueError:
-        print("Input cannot be 0 or a negative number!")
-        return []
+    else:
+        raise ValueError("Input cannot be 0 or a negative number!")
 
 
